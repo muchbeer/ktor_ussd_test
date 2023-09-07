@@ -38,7 +38,7 @@ fun ussdMenu(text: String): String {
         response.append("CON Choose account information you want to view\n1. Account number");
 
     } else if (text.contentEquals("2")) {
-        // Business logic for first level response
+
         // This is a terminal request. Note how we start the response with END
         val ussdPhoneNumber = "255757022731"
         response.append("END Your phone number is ");
