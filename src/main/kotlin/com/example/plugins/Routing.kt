@@ -12,6 +12,7 @@ fun Application.configureRouting() {
         }
 
         post("/ussd") {
+            println("this show the message entered")
             val ussdParameters = call.receiveParameters()
             val sessionID = ussdParameters["sessionId"].toString()
             val phoneNumber = ussdParameters["phoneNumber"].toString()
@@ -19,6 +20,10 @@ fun Application.configureRouting() {
 
             ussdMenu(text)
 
+        }
+
+        get("/receive") {
+            print("life is good")
         }
     }
 }
