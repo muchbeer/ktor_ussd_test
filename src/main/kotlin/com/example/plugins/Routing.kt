@@ -15,8 +15,6 @@ fun Application.configureRouting() {
             val ussdParameters = call.receiveParameters()
             val sessionID = ussdParameters["sessionId"].toString()
             val phoneNumber = ussdParameters["phoneNumber"].toString()
-            val networkCode = ussdParameters["networkCode"].toString()
-            val serviceCode = ussdParameters["serviceCode"].toString()
             val text = ussdParameters["text"].toString()
 
             ussdMenu(text)
