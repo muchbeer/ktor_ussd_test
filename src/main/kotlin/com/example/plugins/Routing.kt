@@ -18,7 +18,9 @@ fun Application.configureRouting() {
             val phoneNumber = ussdParameters["phoneNumber"].toString()
             val text = ussdParameters["text"].toString()
 
-            ussdMenu(text)
+           val response = ussdMenu(text)
+
+            call.respondText (response)
 
         }
 
