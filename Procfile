@@ -1,0 +1,1 @@
+web: ./build/install/ktor_ussd_test/bin/ktor_ussd_test
